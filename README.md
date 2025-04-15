@@ -20,8 +20,7 @@ MindMapify is a web app that turns your notes or PDFs into interactive mind maps
    git clone https://github.com/your-username/mindmapify.git
    cd mindmapify
 
-
-**Backend Setup**
+## Backend Setup:
 
 cd backend
 python -m venv venv
@@ -40,12 +39,13 @@ venv\Scripts\activate
 uvicorn app:app --reload --port 8000
 
 
-**Frontend Setup**
+## Frontend Setup
 
 cd frontend
 npm install	
 
-# if npm install doesnt work fully you can also execute these before npm install.
+**If npm install doesnt work fully you can also execute these before npm install.**
+
 npm install mermaid					
 npm install -D tailwindcss postcss autoprefixer		
 npx tailwindcss init -p					
@@ -61,8 +61,7 @@ Go to http://localhost:5173. or to whatever your frontend provides.
 Type notes (e.g., "Skills: C++, Python") or upload a PDF.
 Click "Generate Synopsis" to see your mind map!
 
-**Example Input**
-
+## Example Input:
 
 Professional Profile:
 My skills include C/C++ programming, DBMS expertise, Python development, and data structures mastery. I am proficient in algorithms and machine learning.
@@ -72,7 +71,7 @@ I am currently based in Howrah, with experience working in urban cities like Mum
 
 or upload any pdf.
 
-**Project Structure**
+## Project Structure
 
 mindmapify/
 ├── backend/
