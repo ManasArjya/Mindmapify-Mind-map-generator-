@@ -1,0 +1,11 @@
+# Python virtual environment
+venv/
+__pycache__/
+
+# Node.js modules
+node_modules/
+dist/
+
+# Misc
+*.log
+.env

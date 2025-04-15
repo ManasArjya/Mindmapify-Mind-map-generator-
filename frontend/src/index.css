@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.mermaid {
+  font-size: 16px; /* Larger text for readability */
+}
+
+@layer utilities {
+  .mermaid-svg {
+    min-height: 600px;
+    width: 100%;
+    border-radius: 8px;
+    overflow-x: auto; /* Scroll for wide diagrams */
+  }
+}
+
+/* Ensure SVG scales properly */
+.mermaid-svg svg {
+  max-width: none;
+  height: auto;
+}
